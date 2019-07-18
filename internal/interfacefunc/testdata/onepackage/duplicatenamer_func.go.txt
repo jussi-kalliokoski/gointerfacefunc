@@ -1,0 +1,5 @@
+type DuplicateNamerFunc func(io.Reader, io.Reader, io.Reader)
+
+func (fn DuplicateNamerFunc) DuplicateName(reader1 io.Reader, reader2 io.Reader, reader3 io.Reader) {
+	fn(reader1, reader2, reader3)
+}

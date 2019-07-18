@@ -1,0 +1,5 @@
+type MultipleReturnerFunc func() (error, error, error)
+
+func (fn MultipleReturnerFunc) ReturnMultiple() (error, error, error) {
+	return fn()
+}

@@ -1,0 +1,5 @@
+type ContexterFunc func(context.Context) context.Context
+
+func (fn ContexterFunc) Context(ctx context.Context) context.Context {
+	return fn(ctx)
+}

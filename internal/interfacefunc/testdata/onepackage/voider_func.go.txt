@@ -1,0 +1,5 @@
+type VoiderFunc func()
+
+func (fn VoiderFunc) Void() {
+	fn()
+}

@@ -1,0 +1,5 @@
+type MultiNamerFunc func(a, b int)
+
+func (fn MultiNamerFunc) MultiName(a, b int) {
+	fn(a, b)
+}

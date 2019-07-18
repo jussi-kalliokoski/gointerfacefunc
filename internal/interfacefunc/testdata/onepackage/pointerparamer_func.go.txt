@@ -1,0 +1,5 @@
+type PointerParamerFunc func(*int)
+
+func (fn PointerParamerFunc) PointerParam(int *int) {
+	fn(int)
+}

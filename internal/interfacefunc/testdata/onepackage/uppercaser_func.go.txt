@@ -1,0 +1,5 @@
+type UppercaserFunc func(X, Foo, XFoo, XXFoo)
+
+func (fn UppercaserFunc) Uppercase(x X, foo Foo, xFoo XFoo, xxFoo XXFoo) {
+	fn(x, foo, xFoo, xxFoo)
+}

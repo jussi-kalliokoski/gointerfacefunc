@@ -1,0 +1,5 @@
+type SliceParamerFunc func([]int)
+
+func (fn SliceParamerFunc) SliceParam(ints []int) {
+	fn(ints)
+}

@@ -1,0 +1,5 @@
+type BuiltinTyperFunc func() string
+
+func (fn BuiltinTyperFunc) BuiltinType() string {
+	return fn()
+}

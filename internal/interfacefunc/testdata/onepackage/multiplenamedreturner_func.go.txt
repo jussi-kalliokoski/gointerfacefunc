@@ -1,0 +1,5 @@
+type MultipleNamedReturnerFunc func() (err1, err2, err3 error)
+
+func (fn MultipleNamedReturnerFunc) ReturnMultipleNamed() (err1, err2, err3 error) {
+	return fn()
+}

@@ -1,0 +1,5 @@
+type UnnamedBuiltinerFunc func(int, uint, string)
+
+func (fn UnnamedBuiltinerFunc) UnnamedBuiltins(int int, uint uint, string string) {
+	fn(int, uint, string)
+}

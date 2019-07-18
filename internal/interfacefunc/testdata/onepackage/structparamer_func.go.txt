@@ -1,0 +1,5 @@
+type StructParamerFunc func(struct{ v int })
+
+func (fn StructParamerFunc) StructParam(v struct{ v int }) {
+	fn(v)
+}

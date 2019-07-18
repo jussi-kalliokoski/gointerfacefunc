@@ -1,0 +1,5 @@
+type NameClasherFunc func([]int, []int, ints1)
+
+func (fn NameClasherFunc) NameClash(ints11 []int, ints2 []int, ints12 ints1) {
+	fn(ints11, ints2, ints12)
+}

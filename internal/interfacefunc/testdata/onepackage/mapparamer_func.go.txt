@@ -1,0 +1,5 @@
+type MapParamerFunc func(map[int]string)
+
+func (fn MapParamerFunc) MapParam(strings map[int]string) {
+	fn(strings)
+}
