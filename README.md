@@ -39,6 +39,19 @@ func (fn AwesomerFunc) Awesome(ctx context.Context, reader io.Reader) error {
 go get -u github.com/jussi-kalliokoski/gointerfacefunc/...
 ```
 
+## Editor/IDE integrations
+
+### vim
+
+The easiest way to integrate is to install the command line utility and then add a keybind for it in your `.vimrc`, for example:
+
+```vim
+
+autocmd FileType go nnoremap goiffn "*yiw:let @* = system('gointerfacefunc "'.expand('%:h').'" '.@*)<CR>
+```
+
+This will add a keybinding that gets triggered when you type `goiffn` in normal mode, using the interface name under cursor and the directory of the current buffer as inputs. The resulting type definition will be copied to your `*` (clipboard) register, so you can then paste it using `"*p` or just `p` if you have `set clipboard=unnamed`.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for more details.
